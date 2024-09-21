@@ -7,7 +7,7 @@ const ResumeButton = () => {
 	const bgHover = 'dark:hover:bg-black-1 hover:bg-white-1';
 	return (
 		<a
-			href='https://huytu-public-file.s3.ap-southeast-1.amazonaws.com/huytu-cv.pdf'
+			href='https://drive.google.com/uc?export=download&id=1tK4Yb7IFKdlaWSsVmPOwEPSYMxxOi3D-'
 			target='_blank'
 			className={`flex flex-row gap-1 items-center px-4 py-2 w-fit rounded-lg ${bg} ${bgHover} border-solid border-2 hover:border-black-1-1 dark:hover:border-white-1 ${text} ${textHover} cursor-pointer`}
 		>

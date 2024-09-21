@@ -7,7 +7,6 @@ import { IoMdClose } from 'react-icons/io';
 const Links = [
 	{ title: 'Home', url: '/' },
 	{ title: 'About', url: '/about' },
-	{ title: 'Contact', url: '/contact' },
 ];
 
 const NavigationBar = () => {

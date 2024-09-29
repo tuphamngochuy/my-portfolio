@@ -75,7 +75,7 @@ const SkillSets = [
 		),
 	},
 	{
-		name: 'AWS Lambda',
+		name: 'Lambda',
 		yoe: 1.5,
 		logo: (
 			<SiAwslambda

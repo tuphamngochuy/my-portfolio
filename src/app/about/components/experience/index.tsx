@@ -1,3 +1,5 @@
+import { FaDotCircle } from 'react-icons/fa';
+
 const experiences = [
 	{
 		companyName: 'Ringkas',
@@ -59,9 +61,36 @@ const experiences = [
 
 const Experience = () => {
 	return (
-		<div>
+		<div className='my-2'>
 			<div className='mx-auto text-center w-fit px-4 py rounded-full bg-white-3 dark:bg-black-3'>
 				<h5>Experiences</h5>
+			</div>
+			<div className='mx-auto text-center w-fit px-4 py-2'>
+				{experiences.map(({ companyName, title, projects, from, to }) => (
+					<div className='grid grid-cols-12 my-4 border-b-2 border-solid dark:border-white-1-1 border-black-1-1'>
+						<div className='col-span-8 text-justify'>
+							<h5>{companyName}</h5>
+							<p>{title}</p>
+							{projects.map(({ name, description }) => (
+								<div className='my-2'>
+									<h6 className='italic my'>{name}</h6>
+									<ul className='ml-4'>
+										{description.map((desc) => (
+											<li>
+												<FaDotCircle
+													size={10}
+													className='inline-block mr-4'
+												/>
+												{desc}
+											</li>
+										))}
+									</ul>
+								</div>
+							))}
+						</div>
+						<div className='col-span-4 text-right italic text-sm'>{`${from} - ${to}`}</div>
+					</div>
+				))}
 			</div>
 		</div>
 	);
